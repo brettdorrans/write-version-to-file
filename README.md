@@ -25,7 +25,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Update version
       id: version
-      uses: brettdorrans/write-version-to-file
+      uses: brettdorrans/write-version-to-file@master
       with:
         filename: '/.VERSION'
 ```
