@@ -11,3 +11,6 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.filename }}
+branding:
+  icon: 'hash'
+  color: 'orange'
