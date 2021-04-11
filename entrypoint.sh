@@ -10,7 +10,7 @@ else
     exit 1;
 fi
 
-git fetch --tags
+git fetch --tags --force
 latestVersionTag=$(git describe --tags "$(git rev-list --tags --max-count=1)");
 echo "File Content: $content"
 echo "Updating Version To: $latestVersionTag"
