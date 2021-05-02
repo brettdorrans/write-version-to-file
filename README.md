@@ -10,6 +10,8 @@ A GitHub Action that fetches the latest git tag within a repo and writes this to
 
 ## Example usage
 
+Commit a file containing `${VERSION}` to the root of your repository. This string will be replaced with the latest git tag in the CI pipeline, e.g. in the example below you should commit this to a file named `.VERSION`
+
 ```
 name: Write Version to File
 on:
