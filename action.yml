@@ -5,12 +5,16 @@ inputs:
   filename:
     description: 'The filename to write the version tag to'
     required: true
-    default: '/.VERSION'
+  placeholder:
+    description: 'The placeholder to replace with latest git tag'
+    required: false
+    default: '${VERSION}'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.filename }}
+    - ${{ inputs.placeholder }}
 branding:
   icon: 'hash'
   color: 'orange'
